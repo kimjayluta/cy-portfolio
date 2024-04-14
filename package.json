@@ -1,0 +1,22 @@
+{
+  "name": "cy-portfolio",
+  "version": "1.0.0",
+  "description": "A simple automation script for e-commerce website written in Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimjayluta/cy-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimjayluta/cy-portfolio/issues"
+  },
+  "homepage": "https://github.com/kimjayluta/cy-portfolio#readme",
+  "devDependencies": {
+    "cypress": "^13.7.3"
+  }
+}
