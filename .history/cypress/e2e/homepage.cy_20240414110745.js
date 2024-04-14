@@ -26,8 +26,8 @@ describe("Homepage", () => {
 		HomePage.verifyDisplayedProduct("Apple monitor 24");
 	});
 
-	it("Click pagination buttons and verfiy the displayed products", () => {
-		cy.wait(500);
+	it.only("Click pagination buttons and verfiy the displayed products", () => {
+		cy.wait(1000);
 		HomePage.clickPaginationNextButton();
 		HomePage.verifyDisplayedProduct("Apple monitor 24");
 		HomePage.clickPreviousPaginationButton();

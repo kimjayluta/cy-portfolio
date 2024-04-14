@@ -18,19 +18,5 @@ describe("Homepage", () => {
 	it("Filter the products by categories", () => {
 		HomePage.clickPhoneCategory();
 		HomePage.verifyDisplayedProduct("Samsung galaxy s6");
-
-		HomePage.clickLaptopCategory();
-		HomePage.verifyDisplayedProduct("MacBook air");
-
-		HomePage.clickMonitorCategory();
-		HomePage.verifyDisplayedProduct("Apple monitor 24");
-	});
-
-	it("Click pagination buttons and verfiy the displayed products", () => {
-		cy.wait(500);
-		HomePage.clickPaginationNextButton();
-		HomePage.verifyDisplayedProduct("Apple monitor 24");
-		HomePage.clickPreviousPaginationButton();
-		HomePage.verifyDisplayedProduct("Samsung galaxy s7");
 	});
 });

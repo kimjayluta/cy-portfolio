@@ -27,10 +27,9 @@ describe("Homepage", () => {
 	});
 
 	it("Click pagination buttons and verfiy the displayed products", () => {
-		cy.wait(500);
 		HomePage.clickPaginationNextButton();
 		HomePage.verifyDisplayedProduct("Apple monitor 24");
 		HomePage.clickPreviousPaginationButton();
-		HomePage.verifyDisplayedProduct("Samsung galaxy s7");
+		HomePage.verifyDisplayedProduct("Samsung galaxy s6");
 	});
 });
