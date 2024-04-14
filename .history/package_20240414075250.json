@@ -4,8 +4,7 @@
   "description": "A simple automation script for e-commerce website written in Cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

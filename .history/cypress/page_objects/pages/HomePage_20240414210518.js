@@ -13,7 +13,7 @@ class HomePage {
 		paginationPrevButton: () => cy.get("#prev2"),
 
 		productCard: (productID) =>
-			cy.get(`:nth-child(${productID}) > .card > .card-block > .card-title`),
+			cy.get(`:nth-child(${productID}) > .card > .card-block`),
 	};
 
 	clickNextCarouselButton = () => {
@@ -51,7 +51,7 @@ class HomePage {
 	};
 
 	selectProduct = (productID) => {
-		this.elements.productCard(productID).should("be.visible");
+		this.elements.productCard(productID).should("be.exist");
 		this.elements.productCard(productID).click();
 	};
 

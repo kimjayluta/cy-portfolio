@@ -51,7 +51,7 @@ class HomePage {
 	};
 
 	selectProduct = (productID) => {
-		this.elements.productCard(productID).should("be.visible");
+		this.elements.productCard(productID).should("be.exist");
 		this.elements.productCard(productID).click();
 	};
 

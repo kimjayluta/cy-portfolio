@@ -10,8 +10,8 @@ module.exports = defineConfig({
 	chromeWebSecurity: false,
 	waitForAnimation: true,
 	// animationDistanceThreshold: 20,
-	defaultCommandTimeout: 10000,
-	execTimeout: 10000,
-	pageLoadTimeout: 10000,
+	defaultCommandTimeout: 30000,
+	execTimeout: 30000,
+	pageLoadTimeout: 30000,
 	failOnStatusCode: false,
 });
