@@ -14,7 +14,6 @@ class CartPage {
 		year: () => cy.get("#year"),
 
 		purchaseButton: () => cy.contains("Purchase"),
-		successMsg: () => cy.get(".sweet-alert > h2"),
 	};
 
 	verifyCartElements = () => {
@@ -68,8 +67,8 @@ class CartPage {
 	};
 
 	verifySuccessMsg = () => {
-		this.elements
-			.successMsg()
+		cy
+			.get(".sweet-alert > h2")
 			.contains("Thank you for your purchase!")
 			.should("be.visible");
 	};
