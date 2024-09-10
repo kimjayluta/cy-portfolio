@@ -1,2 +1,2 @@
 # cy-portfolio
-A simple automation script for e-commerce website written in Cypress
+A simple automation script for an e-commerce website written in Cypress
